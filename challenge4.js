@@ -2,7 +2,9 @@ let shoppingList = ['pop tarts', 'ramen noodles', 'chips', 'salsa', 'coffee'];
 
 shoppingList.push('fruit loops');
 
-shoppingList[shoppingList.length - 2] = 'fair trade coffee';
+
+
+shoppingList[shoppingList.indexOf("coffee")] = 'fair trade coffee';
 
 shoppingList.splice(2, 2, 'rice', 'beans');
 
