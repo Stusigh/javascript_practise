@@ -15,14 +15,9 @@ let players = [
 
 // console.log(playerNamedMike);
 
-firstNames = [];
 
-players.filter(function(player){
-    if(player.position === "RB") {
-        firstNames.push(player.firstName);
-    };
-});
+let runningBacks = players.filter(a => a.position == 'RB' );
 
-console.log(firstNames);
+console.log(runningBacks.map(rb => rb.firstName));
 
 
