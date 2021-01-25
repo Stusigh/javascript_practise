@@ -1,9 +1,16 @@
-console.log('hello world!')
+let users = { Alan: { online: true , age: 38}, Jeff: { online: false, age: 8 }, Sarah: { online: true, age: 38 } };
 
-let students = ['Stuart', 'Kim', 'John']
+function countOnline(userObj) {
+    // Only change code below this line
+    let userOnlineCount = 0;
+    for (let user in userObj) {
+      if (userObj[user]['online'] === true) {
+        userOnlineCount += 1;
+        }
+    }
+    return userOnlineCount
+}     
+  
 
-function myFunction(element) {
-    console.log(element)
-}
 
-students.forEach(myFunction);
+console.log(countOnline(users))
